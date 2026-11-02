@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/StyleSheet.css">
+    <title>Contact Us - Lip Couture</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.JPEG" alt="Lip Couture Logo" style="width:85px;height:75px;">
+            </div>
+
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main style= "text-align: center;"color: lch(42.37% 0.01 296.81);>
+        
+
+        
+
+        <!-- Page Heading -->
+        <section class="contact-header">
+            <h1><u>Contact Us</u></h1>
+
+            <div class="contact-images">
+                <img src="Images/her1.jpeg" alt="Lip Couture Beauty" style="width: 260px;height:720;" >
+>
+                <img src="Images/her3.jpeg" alt="Lip Couture Beauty" style="width: 260px;height:720;" >
+>
+                <img src="Images/her4.jpeg" alt="Lip Couture Beauty" style="width: 260px;height:720;" >
+>
+                <img src="Images/her2.jpeg" alt="Lip Couture Beauty" style="width: 260px;height:720;" >
+>
+            </div>
+        </section>
+
+
+        <!-- Introduction -->
+        <section class="contact-intro">
+            <br>
+
+            <h2><i>Get in Touch</i></h2>
+
+            <p>
+                Have a question about Lip Couture, need help choosing a shade,
+                or simply want to get in touch? Our team would love to hear from you.
+            </p>
+
+            <p>
+                Whether you're looking for product information, assistance with an order,
+                beauty recommendations, or have feedback to share, we're here to help
+                make your Lip Couture experience as beautiful as possible.
+            </p>
+            <br>
+
+        </section>
+
+
+        <!-- Contact Information -->
+        <section class="contact-cards">
+
+            <div class="contact-card">
+                <h2><i>Email</i></h2>
+                <p>For general questions, product information, order support, or other inquiries:</p>
+                <p><strong><u><i>LipCouture771@gmail.com</i></u></strong></p>
+                <br>
+            </div>
+
+
+            <div class="contact-card">
+                <h2><i>Phone</i></h2>
+                <p>For immediate assistance or customer support:</p>
+                <p><strong><u>076 317 5767</u></strong></p>
+                <br>
+            </div>
+
+
+            <div class="contact-card">
+                <h2><i>Social Media</i></h2>
+                <p>
+                    Stay connected with Lip Couture for new product launches,
+                    beauty inspiration, promotions, and the latest updates.
+                    <br>
+                </p>
+
+                <p><strong>Instagram:</strong> @LipCouture_</p>
+                <p><strong>TikTok:</strong> @LipCouture_</p>
+                <br>
+            </div>
+
+        </section>
+
+
+        <!-- Location -->
+        <section class="location">
+
+            <h2><i>Visit Us</i></h2>
+
+            <p class="address">
+                <strong>Lip Couture Beauty (Pty) Ltd</strong><br>
+                45 Juta Street<br>
+                Braamfontein<br>
+                Johannesburg<br>
+                Gauteng, 2001<br>
+                South Africa
+            </p>
+
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps?q=45%20Juta%20Street,%20Braamfontein,%20Johannesburg&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+                <br>
+            </div>
+
+        </section>
+
+
+        <!-- Customer Support -->
+        <section class="support">
+
+            <h2>Customer Support</h2>
+
+            <p><i><u>We're here to assist you with:</u></i></p>
+
+            <ul>
+                <li>--Product and shade inquiries</li>
+                <li>--Order-related questions</li>
+                <li>--Shipping and delivery information</li>
+                <li>--Returns and exchanges</li>
+                <li>--Product recommendations</li>
+                <li>--General feedback and suggestions</li>
+                <li>--Collaboration and business inquiries</li>
+                <br>
+            </ul>
+
+        </section>
+
+
+        <!-- Closing -->
+        <section class="contact-footer">
+
+            <h1><i>Lip Couture</i></h1>
+
+            <p>
+                At Lip Couture, our customers are at the heart of everything we do.
+                Your questions, feedback, and ideas help us continue to grow and
+                create a better beauty experience.
+            </p>
+
+            <p>
+                Have a question? Don't hesitate to reach out.
+            </p>
+
+            <h3><i>Beauty. Confidence. Self-Expression.</i></h3>
+
+            <p>
+                We're here to help you find your perfect lip. 💋
+            </p>
+
+        </section>
+
+    </main>
+<br>
+<br>
+<br>
+
+    <footer align="center">
+        &copy; ST10530003
+     <p>&copy; 2026 LipCouture. All rights reserved.</p>
+        <p id="datetime"> </p>
+     </footer>
+    <script>
+        //date and time update under the footer
+        function updateDateTime(){
+            const now = new Date();
+            const options ={
+                weekday:'long',
+                year:'numeric',
+                month:'long',
+                day:'numeric',
+                hour:'2-digit',
+                minutes:'2-digit',
+                second:'2-digit',
+
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('en-US',options);
+        }
+        //update date time immediately
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+
+</body>
+
+</html>

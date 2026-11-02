@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" href="CSS/StyleSheet.CSS">
+<title>Services</title>
+</head>
+<body  style=>
+ <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.JPEG" style="width:85px;height:75px;">
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+
+    <main style="text-align: center;">
+ 
+       
+    
+
+        <br><h1><u>Our Services</h1></u><br>
+
+    <h3><i>Discover Your Perfect Lip</h3></i>
+
+
+   
+<p><br>At Lip Couture, we are dedicated to making every beauty experience feel luxurious, personal, and empowering.</p>
+ <p>Our services are designed to help you discover products and looks that complement your style, personality, and individual beauty.</p></br>
+
+<p><h3><i><u>Why Choose Lip Couture?</u></p></h3></i>
+
+
+<p>-Beautiful shades for different styles and occasions</p>
+<p>-Elegant beauty experience inspired by the world of couture</p>
+<p>-Products designed for self-expression</p>
+<p>-Versatile options for both everyday and statement looks</p>
+<p>-Customer-focused experience with beauty and confidence at the center</p></br>
+
+<p> Your Lips. Your Style. Your Couture.</p>
+
+<p>At Lip Couture, we believe there is a perfect lip look for everyone. Explore our collection, experiment with color, and find the shades that make you feel confident and beautiful.</p>
+
+<p>Lip Couture — Wear Your Color. Own Your Look.</p><br>
+<br>
+<br>
+<h1><i>Bestselling Glosses</i></h1>
+<br>
+
+
+   <img src="Images/lip1.jpeg" style="width: 200px;height:71;" alt="Strawberry Kiss Lip Gloss">
+   <p>Strawberry Kiss</p>
+    <p class= "price" > </p>R25.00</p>
+    <br>
+    <br>
+
+
+<img src="Images/lip2.jpeg" style="width: 200px;height:71;">
+<p>Vanilla Rose</p>
+<p class= "price" > </p>R25.00</p>
+<br>
+<br>
+
+<img src="Images/lip3.jpeg" style="width: 200px;height:71;">
+<p>Berry Blush</p>
+<p class= "price" > </p>R25.00</p>
+<br>
+<br>
+
+<img src="Images/lip4.jpeg" style="width: 200px;height:71;">
+<p>Peachy Glow</p>
+<p class= "price" > </p>R25.00</p>
+<br>
+<br>
+
+    </main>
+    <footer align="center" style="color: lch(42.37% 0.01 296.81);">&copy;ST10530003 <p>&copy; 2026 LipCouture. All rights reserved.</p>
+        <p id="datetime"> </p>
+     </footer>
+    <script>
+        //date and time update under the footer
+        function updateDateTime(){
+            const now = new Date();
+            const options ={
+                weekday:'long',
+                year:'numeric',
+                month:'long',
+                day:'numeric',
+                hour:'2-digit',
+                minutes:'2-digit',
+                second:'2-digit'
+
+            };
+            document.getElementById('datetime').textContent = now.toLocaleDateString('en-US',options);
+        }
+        //update date time immediately
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <titel>testing scripts</titel>
+    <meta name="keywords" content="stunning coastlines , tropical getaways , beach vactions">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="................"/>
+    <meta name="robots" content="index , follow">
+    <meta name="author" content="Katlego Maponya">
+
+   
+</head>
+<body>
+    <head> </head>
+    <main>
+        <h3 style="margin-bottom: 8px;">Change HTML Content 
+        </h3>
+        <p id = 'kat'>JavaScript can change HTML content</p>
+        <button type="button" onclick="document.getElementById"></button>
+
+    </main>
+
+    <footer align="center">&copy;ST10530003<p id="datetime"></p></footer>
+    //date & time update
+    <script>
+        function updateDateTime(){
+            const now = new Date();
+            const options ={
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+
+            };
+            document.getElementById("datetime").textContent = now.toLocaleDateString("en-US" , options);
+        }
+        //update time
+        updateDateTime();
+    </script>
+
+    <script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>

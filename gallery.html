@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/StyleSheet.CSS">
+
+    <title>Gallery - Lip Couture</title>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.JPEG"
+                 alt="Lip Couture Logo"
+                 style="width:85px;height:75px;">
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+ 
+ 
+
+    <!-- Gallery Heading -->
+    <section class="gallery-heading">
+        <h1>Our Gallery</h1>
+        <p>Discover the beauty of Lip Couture</p>
+    </section>
+
+
+    <!-- Video Section -->
+    <section class="gallery-video">
+
+        <video controls muted playsinline>
+            <source src="Images/video.mp4" type="video/mp4">
+            Your browser does not support video playback.
+            <br>
+            <br>
+
+        </video>
+
+    </section>
+
+       <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="Images/Girl.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Images/girl 2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Images/blushss.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Images/nudess.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Images/pink pinkss.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="Images/pinkss.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="Images/Girl.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="Images/girl 2.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="Image/blushss" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="Images/nudess.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="Images/pink pinkss.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="Images/pinkss.jpeg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="Images/Girl.jpeg" style="width: 360px;height:720;" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="Images/girl 2.jpeg" style="width: 360px;height:720;" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="Images/blushss.jpeg" style="width: 360px;height:720;"onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="Images/nudess.jpeg"  style="width: 360px;height:720;" onclick="currentSlide(4)" alt="Lights">
+
+      <div class="column">
+      <img class="demo" src="Images/pink pinkss.jpeg" style="width: 360px;height:720;"onclick="currentSlide(5)" alt="Lights">
+
+      <div class="column">
+      <img class="demo" src="Images/pinkss.jpeg" style="width: 360px;height:720;" onclick="currentSlide(6)" alt="Lights">
+    </div>
+  </div>
+</div>
+
+    
+
+</script>
+
+</body>
+</html>
+
+
